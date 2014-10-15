@@ -80,28 +80,33 @@ table {
 	display:inline-block;
 }
 .top-navigation .links > .active {
-    color: #3E2F1F;
+    color: #F17200;
     font-weight: 600;
 }
 .top-navigation .links li:hover {
     cursor: pointer;
-    color: #735743;
+    color: #EFB600;
 }
 
 /* Introduction Section */
 .introduction {
-    background-image: url(img/introduction.jpg);
+    background-image: url(img/about-me-color.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     height: 750px;
     overflow: auto;
 }
+.introduction .content {
+    width: 50%;
+    float:right;
+}
 .introduction h1,
 .introduction h3 {
-    color: white;
+    color: #00153E;
     text-align: center;
     font-weight: 400;
+    line-height: 1.538;
 }
 .introduction h1 {
     margin-top: 280px;
@@ -112,7 +117,7 @@ table {
     font-size: 25px;
 }
 
-/* Mugshot */
+/* Mugshot 
 .mugshot {
     background-image: url(img/mugshot.jpg);
     border-radius: 100px;
@@ -123,22 +128,22 @@ table {
     height: 200px;
     margin: auto;
     border: 4px #3E2F1F;
-}
+    float:right;
+}*/
 
 /* About Me */
 .about-me {
-    height: 735px;
+    height: 750px;
     overflow: auto;
-    padding: 15px 15px;
     line-height: 1.538;
 } 
 .about-me .content {
-    width: 33.3333333%;
+    width: 50%;
 }
 .about-me h3 {
     margin-top: 80px;
     font-size: 50px;
-    color:#760118;
+    color:#004972;
     font-weight:400;
     margin-top: 20px;
     font-size: 25px;
@@ -149,26 +154,7 @@ table {
     font-size: 18px;
 }
 
-/* Check this services */
-.services {
-    height: 735px;
-    overflow: auto;
-    padding: 15px 15px;
-    line-height: 1.538;
-} 
-.services .content {
-    width: 33.3333333%;
-}
-.services h3 {
-    margin-top: 280px;
-    font-size: 50px;
-    color:#760118;
-    font-weight:400;
-    margin-top: 20px;
-    font-size: 25px;
-}
-
-/* Keep this services */
+/* List of Services */
 .services {
     background-color: #fff;
     overflow: hidden;
@@ -192,13 +178,14 @@ table {
     width: 33.3333333%;
 }
 .services .column h3 {
+    color:#8C0100;
     font-weight: 400;
     font-size: 25px;
     margin: 40px 0px 30px;
 }
 .services .column p {
-    font-weight: 300;
-    font-size: 21px;
+    font-weight: 200;
+    font-size: 18px;
 }
 
 
