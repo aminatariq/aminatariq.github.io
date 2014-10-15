@@ -50,6 +50,43 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* unvisited link */
+a:link {
+    color: #A45E46;
+}
+
+/* visited link */
+a:visited {
+    color: #A45E46;
+}
+
+/* mouse over link */
+a:hover {
+    color: #4E538C;
+}
+
+/* selected link */
+a:active {
+    color: #A45E46;
+}
+
+/* link decoration */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
 
 /* Navigation Section */
 .top-navigation {
