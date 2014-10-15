@@ -219,7 +219,7 @@ table {
     height: 40px;
     display: inline-block;
     margin: 20px 5px;
-    border: 1px solid #eaebec;
+    border: 1px; 
     padding: 10px 0;
     text-align: center;
 }
