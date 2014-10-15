@@ -112,58 +112,6 @@ table {
     font-size: 25px;
 }
 
-/* About Me Section */
-.about-me {
-    height: 735px;
-    overflow: auto;
-    padding: 15px 15px;
-    line-height: 1.538;
-} 
-.about-me .content {
-    width: 33.3333333%;
-}
-.about-me h3 {
-    margin-top: 280px;
-    font-size: 50px;
-    color:#760118;
-    font-weight:400;
-    margin-top: 20px;
-    font-size: 25px;
-}
-
-/* About Me */
-.about-me {
-    background-color: #fff;
-    overflow: hidden;
-    padding-bottom: 160px;
-}
-.about-me .content {
-    margin-top: 126px;
-    padding: none;
-    color: #1d1e21;
-    text-align: center;
-}
-.about-me h2 {
-    font-size: 44px;
-    margin: 26px 0 50px;
-    font-weight: 300;
-}
-.about-me .column {
-    display: flex;
-}
-.about-me .column > li {
-    width: 33.3333333%;
-}
-.about-me .column h3 {
-    font-weight: 400;
-    font-size: 25px;
-    margin: 40px 0px 30px;
-}
-.about-me .column p {
-    font-weight: 300;
-    font-size: 21px;
-}
-
 /* Mugshot */
 .mugshot {
     background-image: url(img/mugshot.jpg);
@@ -177,29 +125,83 @@ table {
     border: 4px #3E2F1F;
 }
 
-/* Resume */
-.resume {
+/* About Me */
+.about-me {
     height: 735px;
     overflow: auto;
     padding: 15px 15px;
     line-height: 1.538;
 } 
-.resume .content {
-	width: 33.3333333%;
+.about-me .content {
+    width: 33.3333333%;
 }
-.resume h3 {
-	margin-top: 80px;
+.about-me h3 {
+    margin-top: 80px;
     font-size: 50px;
-	color:#760118;
-	font-weight:400;
+    color:#760118;
+    font-weight:400;
     margin-top: 20px;
     font-size: 25px;
 }
-.resume p {
-	color:#4c5058;
+.about-me p {
+    color:#4c5058;
     font-weight: 400;
     font-size: 18px;
 }
+
+/* Check this services */
+.services {
+    height: 735px;
+    overflow: auto;
+    padding: 15px 15px;
+    line-height: 1.538;
+} 
+.services .content {
+    width: 33.3333333%;
+}
+.services h3 {
+    margin-top: 280px;
+    font-size: 50px;
+    color:#760118;
+    font-weight:400;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+/* Keep this services */
+.services {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 160px;
+}
+.services .content {
+    margin-top: 126px;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
+.services h2 {
+    font-size: 44px;
+    margin: 26px 0 50px;
+    font-weight: 300;
+}
+.services .column {
+    display: flex;
+}
+.services .column > li {
+    width: 33.3333333%;
+}
+.services .column h3 {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 40px 0px 30px;
+}
+.services .column p {
+    font-weight: 300;
+    font-size: 21px;
+}
+
+
 
 /* Footer */
 .social {
