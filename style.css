@@ -74,6 +74,7 @@ table {
 .links {
 	float:right; 
 	margin-top:25px;
+  color: #A45E46;
 }
 .top-navigation .links li {
 	margin-left: 25px;
@@ -205,6 +206,25 @@ HTML: <div class="mugshot"></div>*/
     font-size: 18px;
 }
 
+/* Portfolio */
+.portfolio {
+    line-height: 1.538;
+} 
+.portfolio .content {
+    width: 50%;
+}
+.portfolio h3 {
+    margin-top: 60px;
+    font-size: 25px;
+    color:#004972;
+    font-weight:400;
+    font-family: 'Raleway', sans-serif;
+}
+.portfolio p {
+    color:#4c5058;
+    font-weight: 400;
+    font-size: 18px;
+}
 
 /* Footer */
 .social {
