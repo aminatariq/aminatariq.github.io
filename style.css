@@ -1,100 +1,237 @@
-.masthead-heading,
-.masthead-intro,
-.home-section,
-.about-me-section,
-.locations,
-.resume-section{
-    /* Typography Declarations */
-    color: #222222;
-    font-size: 1em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
 }
 
-footer{
-    /* Typography Declarations */
-    color: #222222; 
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-footer,
-.masthead-heading,
-.masthead-intro {
-  text-align: center;
+/* Navigation Section */
+.top-navigation {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+}
+.top-navigation > .content {
+    height: 70px;
+}
+.content {
+	width: 970px;
+	margin: 0 auto;
+	padding: 0px 15px;
+	font-family: 'Roboto', sans-serif; 
+	font-size: 16px; 
+	color: #A78D88; 
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+}
+.links {
+	float:right; 
+	margin-top:25px;
+}
+.top-navigation .links li {
+	margin-left: 25px;
+	display:inline-block;
+}
+.top-navigation .links > .active {
+    color: #3E2F1F;
+    font-weight: 600;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #735743;
 }
 
-.masthead {
-    padding: 6em 0; 
-  background-image: url('dark-galaxy.jpg');
+/* Introduction Section */
+.introduction {
+    background-image: url(img/introduction.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    overflow: auto;
+}
+.introduction h1,
+.introduction h3 {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+}
+.introduction h1 {
+    margin-top: 280px;
+    font-size: 50px;
+}
+.introduction h3 {
+    margin-top: 20px;
+    font-size: 25px;
 }
 
-.masthead-intro { color:white; text-shadow: 4px 4px 5px #000;
-    /* Layout Declarations */
-    margin-bottom: 0.1em;
-    /* Typography Declarations */
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 2em; 
+/* About Me Section */
+.about-me {
+    height: 735px;
+    overflow: auto;
+    padding: 15px 15px;
+    line-height: 1.538;
+} 
+.about-me .content {
+    width: 33.3333333%;
+}
+.about-me h3 {
+    margin-top: 280px;
+    font-size: 50px;
+    color:#760118;
+    font-weight:400;
+    margin-top: 20px;
+    font-size: 25px;
 }
 
-.masthead-heading {color:#EFD9A7; text-shadow: 5px 5px 3px black;
-    /* Layout Declarations */
-    margin-top: -0.2em;
-    /* Typography Declarations */
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-    font-size: 6em;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
+/* About Me */
+.about-me {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 160px;
 }
-
-h1 {
-  color: #2B8B6B; font-weight:400
+.about-me .content {
+    margin-top: 126px;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
 }
-
-.home-section,
-.about-me-section,
-.resume-section {
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
-
-.social{padding:0}
-
-.social > li {
-    display: inline-block;
-}
-
-.home-section > p,
-.about-me-section > p {
-    /* Typography Declarations */
+.about-me h2 {
+    font-size: 44px;
+    margin: 26px 0 50px;
     font-weight: 300;
-    letter-spacing: 0.05em;
+}
+.about-me .column {
+    display: flex;
+}
+.about-me .column > li {
+    width: 33.3333333%;
+}
+.about-me .column h3 {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 40px 0px 30px;
+}
+.about-me .column p {
+    font-weight: 300;
+    font-size: 21px;
 }
 
-.resume-section > h2 {
-    font-family: "Kreon", Georgia, serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    /* Layout */
-    margin: 2em 0 1em 0;
+/* Mugshot */
+.mugshot {
+    background-image: url(img/mugshot.jpg);
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border: 4px #3E2F1F;
 }
 
-section > h1 {
-    margin-top: 2em;
+/* Resume */
+.resume {
+    height: 735px;
+    overflow: auto;
+    padding: 15px 15px;
+    line-height: 1.538;
+} 
+.resume .content {
+	width: 33.3333333%;
 }
-footer {
-  /* Red, Green, Blue: #RRGGBB */
-  background-color: #EFD9A7;
-  margin-top:4em
+.resume h3 {
+	margin-top: 80px;
+    font-size: 50px;
+	color:#760118;
+	font-weight:400;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.resume p {
+	color:#4c5058;
+    font-weight: 400;
+    font-size: 18px;
 }
 
-/* unvisited link */
-a:link {font-weight:bold;
-    color: #2B8B6B;
+/* Footer */
+.social {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 150px;
+    text-align: center;
 }
-
-/* visited link */
-a:visited {
-    color: #2B8B6B;
+.social hr {
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 21px 0;
+}
+.social .icons > li {
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 20px 5px;
+    border: 1px solid #eaebec;
+    padding: 10px 0;
+    text-align: center;
+}
+.social .icons > li:hover {
+    cursor: pointer;
+}
+.social .twitter {
+    color: #55acee;
+}
+.social .facebook {
+    color: #4c66a4;
+}
+.social .instagram {
+    color: #3f729b;
 }
