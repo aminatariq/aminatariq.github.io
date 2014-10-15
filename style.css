@@ -80,12 +80,12 @@ table {
 	display:inline-block;
 }
 .top-navigation .links > .active {
-    color: #F17200;
+    color: #A45E46;
     font-weight: 600;
 }
 .top-navigation .links li:hover {
     cursor: pointer;
-    color: #EFB600;
+    color: #4E538C;
 }
 
 /* Introduction Section */
@@ -103,10 +103,11 @@ table {
 }
 .introduction h1,
 .introduction h3 {
-    color: #00153E;
+    color: #004972;
     text-align: center;
     font-weight: 400;
     line-height: 1.538;
+    font-family: 'Raleway', sans-serif;
 }
 .introduction h1 {
     margin-top: 280px;
@@ -147,6 +148,7 @@ table {
     font-weight:400;
     margin-top: 20px;
     font-size: 25px;
+    font-family: 'Raleway', sans-serif;
 }
 .about-me p {
     color:#4c5058;
@@ -178,6 +180,7 @@ table {
     width: 33.3333333%;
 }
 .services .column h3 {
+    font-family: 'Raleway', sans-serif;
     color:#8C0100;
     font-weight: 400;
     font-size: 25px;
