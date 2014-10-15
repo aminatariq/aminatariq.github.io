@@ -35,9 +35,9 @@ body {
     -webkit-font-smoothing: antialiased;
 	line-height: 1;
 }
-ol, ul {
+/* ol, ul {
 	list-style: none;
-}
+} */
 blockquote, q {
 	quotes: none;
 }
@@ -130,7 +130,8 @@ table {
     margin: auto;
     border: 4px #3E2F1F;
     float:right;
-}*/
+}
+HTML: <div class="mugshot"></div>*/
 
 /* About Me */
 .about-me {
@@ -139,19 +140,22 @@ table {
     line-height: 1.538;
 } 
 .about-me .content {
-    margin-top: 20px;
     width: 50%;
 }
 .about-me h3 {
-    margin-top: 80px;
-    font-size: 50px;
+    margin-top: 60px;
+    font-size: 25px;
     color:#004972;
     font-weight:400;
-    margin-top: 20px;
-    font-size: 25px;
     font-family: 'Raleway', sans-serif;
 }
 .about-me p {
+    color:#4c5058;
+    font-weight: 400;
+    font-size: 18px;
+}
+.facts {
+    margin-left:50px;
     color:#4c5058;
     font-weight: 400;
     font-size: 18px;
@@ -169,10 +173,26 @@ table {
     color: #1d1e21;
     text-align: center;
 }
+.services .content p {
+    color:#4c5058;
+    font-weight: 400;
+    font-size: 18px;
+}
+.services h3 {
+    margin-top: 80px;
+    font-size: 50px;
+    color:#004972;
+    font-weight:400;
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
 .services h2 {
-    font-size: 44px;
-    margin: 26px 0 50px;
+    font-family: 'Raleway', sans-serif;
+    color:#8C0100;
     font-weight: 300;
+    font-size: 36px;
+    margin: 26px 0 50px;
 }
 .services .column {
     display: flex;
@@ -180,18 +200,10 @@ table {
 .services .column > li {
     width: 33.3333333%;
 }
-.services .column h3 {
-    font-family: 'Raleway', sans-serif;
-    color:#8C0100;
-    font-weight: 400;
-    font-size: 25px;
-    margin: 40px 0px 30px;
-}
 .services .column p {
     font-weight: 200;
     font-size: 18px;
 }
-
 
 
 /* Footer */
@@ -233,3 +245,182 @@ table {
 .social .google-plus {
     color: #C63D2D;
 }
+
+/* Grid Code */
+.grid {
+    /* grid code goes here... */
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.grid {
+    width: 100%;
+}
+
+.row {
+    margin-bottom: 1em;
+}
+.grid, .row, [class*="-col"] {
+    padding: 0;
+    margin: 0;
+}
+.grid:after, .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.grid:after, .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row {
+  margin-bottom: 1em;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+[class*="-col"] {
+  float: left;
+  margin-right: 1.5%;
+}
+
+[class*="-col"]:last-child {
+    margin-right: 0;
+}
+
+/* rest of grid code goes here... */
+
+.one-col {
+  width: 6.958%;
+}
+
+.two-col {
+  width: 15.41%;
+}
+
+.three-col {
+  width: 23.87%;
+}
+
+.four-col {
+  width: 32.33%;
+}
+
+.five-col {
+  width: 40.79%;
+}
+
+.six-col {
+  width: 49.25%;
+}
+
+.seven-col {
+  width: 57.70%;
+}
+
+.eight-col {
+  width: 66.16%;
+}
+
+.nine-col {
+  width: 74.62%;
+}
+
+.ten-col {
+  width: 83.08%;
+}
+
+.eleven-col {
+  width: 91.54%;
+}
+
+.twelve-col {
+  width: 100%;
+}
+
+/* Off-set Code */
+.one-offset {
+  margin-left: 8.458%;
+}
+
+.two-offset {
+  margin-left: 16.91%;
+}
+
+.three-offset {
+  margin-left: 25.37%;
+}
+
+.four-offset {
+  margin-left: 33.83%;
+}
+
+.five-offset {
+  margin-left: 42.29%;
+}
+
+.six-offset {
+  margin-left: 50.75%;
+}
+
+.seven-offset {
+  margin-left: 59.20%;
+}
+
+.eight-offset {
+  margin-left: 67.66%;
+}
+
+.nine-offset {
+  margin-left: 76.12%;
+}
+
+.ten-offset {
+  margin-left: 84.58%;
+}
+
+.eleven-offset {
+  margin-left: 91.54%;
+}
+
+/* Coloring Code
+.grid {
+    background-color: #999;
+}
+
+.row {
+    background-color: #BBB;
+}
+
+[class*="-col"] {
+    background-color: #EEE;
+}
+ */
+
+/* Media Queries */ 
+
+@media all and (max-width: 768px) {
+  [class*="-col"] {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .row:last-child > [class*="-col"]:last-child {
+    margin-bottom: 0;
+  }
+
+  [class*="-offset"] {
+    margin-left: 0;
+  }
+
+  .row {
+    margin: 0;
+  }
+}
+
+/* Constraining to large screens
+.grid {
+  max-width: 960px;
+}*/
