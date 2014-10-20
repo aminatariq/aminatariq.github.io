@@ -247,9 +247,9 @@ HTML: <div class="mugshot"></div>*/
 .portfolio {
     line-height: 1.538;
 } 
-.portfolio .content {
+/*.portfolio .content {
     width: 50%;
-}
+} */
 .portfolio h3 {
     margin-top: 60px;
     font-size: 25px;
@@ -261,6 +261,38 @@ HTML: <div class="mugshot"></div>*/
     color:#4c5058;
     font-weight: 400;
     font-size: 18px;
+}
+
+/* CSS Only Image Slider */
+
+#nav {
+  list-style:none;
+  padding:0;
+  text-align:center;
+}
+
+.link {
+  display:inline-block;
+  height: 750px;
+  vertical-align: center;
+}
+
+.linkTitle {
+  padding:10px;
+}
+
+.link:hover > .linkTitle {
+  background-color:lightgray;
+}
+
+.link:hover > .subMenu {
+  display:block;
+}
+
+.subMenu {
+  display:none;
+  list-style:none;
+  text-align:left;
 }
 
 /* Footer */
@@ -289,6 +321,9 @@ HTML: <div class="mugshot"></div>*/
 }
 .social .linkedin {
     color: #4875B4;
+}
+.social .angelist {
+    color: #3f729b;
 }
 .social .github {
     color: #3f729b;
