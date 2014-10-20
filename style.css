@@ -265,38 +265,94 @@ HTML: <div class="mugshot"></div>*/
 
 /* CSS Only Image Slider */
 
-#nav {
-  list-style:none;
-  padding:0;
-  text-align:center;
-}
+/*slideshow styles*/
 
 .slideshow {
-    height: 750px;
-    overflow: auto;}
-
-.link {
-  display:inline-block;
   height: 750px;
-  vertical-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+  border: solid 1px white;
 }
 
-.linkTitle {
-  padding:10px;
+.slideshow-container {
+  font-size: 0;
+  transition: 1s ease;
+  height: 225px;
 }
 
-.link:hover > .linkTitle {
-  background-color:lightgray;
+.slideshow-container:hover {
+  animation-play-state: paused;
 }
 
-.link:hover > .subMenu {
-  display:block;
+/* img, .text-container {
+  width: 625px;
+  height: auto;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
 }
 
-.subMenu {
-  display:none;
-  list-style:none;
-  text-align:left;
+.text-container {
+  height: 225px;
+  position: relative;
+} */
+
+
+p {
+  position: relative;
+  top: -45%;
+  padding: 5px;
+}
+
+.slide {
+  animation: slide 24s ease infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  
+  12.5% {
+    transform: translateX(0%);
+  }
+  
+  25% {
+    transform: translateX(-25%);
+  }
+  
+  37.5% {
+    transform: translateX(-25%);
+  }
+  
+  50% {
+    transform: translateX(-50%);
+  }
+  
+  62.5% {
+    transform: translateX(-50%);
+  }
+  
+  75% {
+    transform: translateX(-75%);
+  }
+  
+  87.5% {
+    transform: translateX(-75%);
+  }
+  
+  99% {
+    transform: translateX(-75%);
+  }
+  
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.p {
+  margin-top: 140px;
+  text-align: center;
 }
 
 /* Footer */
