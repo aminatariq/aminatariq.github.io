@@ -271,6 +271,10 @@ HTML: <div class="mugshot"></div>*/
   text-align:center;
 }
 
+.slideshow {
+    height: 750px;
+    overflow: auto;}
+
 .link {
   display:inline-block;
   height: 750px;
