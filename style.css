@@ -50,40 +50,34 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
 /* unvisited link */
 a:link {
     color: #A45E46;
 }
-
 /* visited link */
 a:visited {
     color: #A45E46;
 }
-
 /* mouse over link */
 a:hover {
     color: #4E538C;
 }
-
 /* selected link */
 a:active {
     color: #A45E46;
 }
-
 /* link decoration */
-
 a:link {
     text-decoration: none;
 }
-
 a:visited {
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
 }
-
 a:active {
     text-decoration: underline;
 }
@@ -247,9 +241,6 @@ HTML: <div class="mugshot"></div>*/
 .portfolio {
     line-height: 1.538;
 } 
-/*.portfolio .content {
-    width: 50%;
-} */
 .portfolio h3 {
     margin-top: 60px;
     font-size: 25px;
@@ -277,14 +268,18 @@ HTML: <div class="mugshot"></div>*/
 100% { left: -400%; }
 }
 
-body { margin: 0; } 
+body { 
+    margin: 0; 
+} 
 
 div#slider { 
-    overflow: hidden; }
+    overflow: hidden; 
+}
 
 div#slider figure img { 
     width: 20%; 
-    float: left; }
+    float: left; 
+}
 
 div#slider figure {
     position: relative; 
@@ -294,10 +289,9 @@ div#slider figure {
     font-size: 0; 
     left: 0; 
     text-align: left;
-    -webkit-animation: 30s slidy ease-in-out infinite;
+    -webkit-animation: 20s slidy ease-in-out infinite;
     animation: 10s slidy ease-in-out infinite; 
 }
-
 
 /* Footer */
 .social {
