@@ -82,6 +82,10 @@ a:active {
     text-decoration: underline;
 }
 
+a {
+   margin-top: -100px;
+}
+
 /* Navigation Section */
 .top-navigation {
     background-color: #fff;
@@ -93,23 +97,23 @@ a:active {
     height: 70px;
 }
 .content {
-	width: 970px;
-	margin: 0 auto;
-	padding: 0px 15px;
-	font-family: 'Alegreya Sans', sans-serif; 
-	font-size: 16px; 
-	color: #A78D88; 
-	letter-spacing: 0.03em;
-	-webkit-font-smoothing: antialiased;
+  	width: 970px;
+  	margin: 0 auto;
+  	padding: 0px 15px;
+  	font-family: 'Alegreya Sans', sans-serif; 
+  	font-size: 16px; 
+  	color: #A78D88; 
+  	letter-spacing: 0.03em;
+  	-webkit-font-smoothing: antialiased;
 }
 .links {
-	float:right; 
-	margin-top:25px;
-  color: #A45E46;
+  	float:right; 
+  	margin-top:25px;
+    color: #A45E46;
 }
 .top-navigation .links li {
-	margin-left: 25px;
-	display:inline-block;
+  	margin-left: 25px;
+  	display:inline-block;
 }
 .top-navigation .links > .active {
     color: #A45E46;
@@ -291,6 +295,7 @@ div#slider figure {
     text-align: left;
     -webkit-animation: 20s slidy ease-in-out infinite;
     animation: 10s slidy ease-in-out infinite; 
+    z-index:-1;
 }
 
 /* Footer */
