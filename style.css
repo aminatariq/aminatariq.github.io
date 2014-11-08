@@ -82,9 +82,7 @@ a:active {
     text-decoration: underline;
 }
 
-a {
-   margin-top: -100px;
-}
+
 
 /* Navigation Section */
 .top-navigation {
@@ -107,7 +105,7 @@ a {
   	-webkit-font-smoothing: antialiased;
 }
 .links {
-  	float:right; 
+  	float:left; 
   	margin-top:25px;
     color: #A45E46;
 }
@@ -153,21 +151,6 @@ a {
     margin-top: 20px;
     font-size: 25px;
 }
-
-/* Mugshot 
-.mugshot {
-    background-image: url(img/mugshot.jpg);
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    border: 4px #3E2F1F;
-    float:right;
-}
-HTML: <div class="mugshot"></div>*/
 
 /* About Me */
 .about-me {
@@ -215,11 +198,8 @@ HTML: <div class="mugshot"></div>*/
     font-size: 18px;
 }
 .services h3 {
-    margin-top: 80px;
-    font-size: 50px;
     color:#004972;
     font-weight:400;
-    margin-top: 20px;
     font-size: 25px;
     font-family: 'Alegreya Sans SC', sans-serif;
 }
@@ -243,10 +223,24 @@ HTML: <div class="mugshot"></div>*/
 
 /* Portfolio */
 .portfolio {
+    height: 750px;
+    overflow: auto;
     line-height: 1.538;
 } 
+.portfolio .content {
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
+.portfolio h2 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color:#8C0100;
+    font-weight: 300;
+    font-size: 25px;
+    margin: 26px 0 10px;
+}
 .portfolio h3 {
-    margin-top: 60px;
+    margin-top: 80px;
     font-size: 25px;
     color:#004972;
     font-weight:400;
@@ -479,20 +473,6 @@ div#slider figure {
 .eleven-offset {
   margin-left: 91.54%;
 }
-
-/* Coloring Code
-.grid {
-    background-color: #999;
-}
-
-.row {
-    background-color: #BBB;
-}
-
-[class*="-col"] {
-    background-color: #EEE;
-}
- */
 
 /* Media Queries */ 
 
